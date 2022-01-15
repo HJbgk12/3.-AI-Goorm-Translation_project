@@ -1,28 +1,24 @@
 ## Baseline model of Goorm Project-3 NMT
 
-¿µ-> ÇÑ ¹ø¿ªÀ» À§ÇÑ Encoder-Decoder ¸ğµ¨
+ì˜-> í•œ ë²ˆì—­ì„ ìœ„í•œ Encoder-Decoder ëª¨ë¸
 
-- ÇÑ±¹¾î ¹ø¿ªÀ» À§ÇØ Decoder¿¡¼­ `monologg/koelectra-base-v3-discriminator`ÀÇ `token_embeddings`À» ÇÑ±¹¾î pretrained Subword EmbeddingÀ¸·Î »ç¿ëÇÕ´Ï´Ù.
-- ¿µ¾î µ¥ÀÌÅÍ¸¦ À§ÇØ Encoder¿¡¼­ `bert-base-uncased`ÀÇ pretrained model·Î »ç¿ëÇÕ´Ï´Ù.
+- í•œêµ­ì–´ ë²ˆì—­ì„ ìœ„í•´ Decoderì—ì„œ `monologg/koelectra-base-v3-discriminator`ì˜ `token_embeddings`ì„ í•œêµ­ì–´ pretrained Subword Embeddingìœ¼ë¡œ ì‚¬ìš©í•©ë‹ˆë‹¤.
+- ì˜ì–´ ë°ì´í„°ë¥¼ ìœ„í•´ Encoderì—ì„œ `bert-base-uncased`ì˜ pretrained modelë¡œ ì‚¬ìš©í•©ë‹ˆë‹¤.
 
 
-### 1. ÇÊ¿äÇÑ ¶óÀÌºê·¯¸® ¼³Ä¡
+### 1. í•„ìš”í•œ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì„¤ì¹˜
 
 `pip install -r requirements.txt`
 
-### 2. ¸ğµ¨ ÇĞ½À
+### 2. ëª¨ë¸ í•™ìŠµ
 
-`script/train.sh`¸¦ ½ÇÇàÇÕ´Ï´Ù
-
-
-ÇĞ½ÀµÈ ¸ğµ¨Àº epoch º°·Î `CHECKPOINT/epoch-{number}.bin` À¸·Î ÀúÀåµË´Ï´Ù.<br>
-Best Checkpoint°¡ `CHECKPOINT/best_model`¿¡ ÀúÀåµË´Ï´Ù.<br>
-
-### 3. Ãß·ĞÇÏ±â
-
-`script/test.sh`¸¦ ½ÇÇàÇÕ´Ï´Ù
+`script/train.sh`ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤
 
 
-### 4. Á¦ÃâÇÏ±â
+í•™ìŠµëœ ëª¨ë¸ì€ epoch ë³„ë¡œ `CHECKPOINT/epoch-{number}.bin` ìœ¼ë¡œ ì €ì¥ë©ë‹ˆë‹¤.<br>
+Best Checkpointê°€ `CHECKPOINT/best_model`ì— ì €ì¥ë©ë‹ˆë‹¤.<br>
 
-3¹ø ½ºÅÜ `inference.py`¿¡¼­ `RESULTDIR`¿¡ ÀúÀåµÈ `result.test.csv`¿Í `result.test2.csv`À» Á¦ÃâÇÕ´Ï´Ù.
+### 3. ì¶”ë¡ í•˜ê¸°
+
+`script/test.sh`ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤
+
