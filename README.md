@@ -15,7 +15,7 @@ torch 1.9.0
 - 코퍼스를 어떤 토큰 단위로 쪼갤지 전처리 구간 필요
 - subword 단위로 토큰화 작업 => SentencePiece Tokenizer
 
-### 2. 모델 학습
+### Train
 
 - Seq2Seq으로 학습
 - 학습속도 개선 : Padding, Bucketing
