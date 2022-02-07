@@ -7,8 +7,8 @@
 
 ###  Requirement
 
-transformers  4.12.3
-torch 1.9.0
+- transformers  4.12.3
+- torch 1.9.0
 
 ### Preprocess
 
